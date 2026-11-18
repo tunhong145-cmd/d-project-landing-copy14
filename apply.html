@@ -1,13 +1,15 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" class="c-copper-dawn">
 <head>
   <script src="repo-pixels.js?v=20261010-1"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="填寫姓名、年齡和警示戶/告誡戶狀態，送出資金需求。">
-  <meta name="theme-color" content="#edf6f1">
-  <title>填寫三項資料，送出資金需求</title>
+  <meta name="description" content="填寫姓名、年齡、手機號碼和警示戶/告誡戶狀態，送出資金需求。">
+  <meta name="theme-color" content="#ecd7cb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#29201d" media="(prefers-color-scheme: dark)">
+  <title>填寫基本資料，送出資金需求</title>
   <link rel="stylesheet" href="styles.css?v=2026082101">
+  <link rel="stylesheet" href="c-copper-dawn.css?v=20261118-1">
   <script src="app.js?v=20261111-warning-label" defer></script>
 </head>
 <body data-page="apply">
@@ -17,7 +19,7 @@
         <span class="wordmark-mark" aria-hidden="true">額</span>
         <span>線上額度評估</span>
       </a>
-      <span class="header-note">只填 3 項資料</span>
+      <span class="header-note">線上申請</span>
     </div>
   </header>
 
@@ -36,14 +38,14 @@
           <a id="change-amount-link" href="index.html">重新選擇</a>
           <div class="summary-note">
             <b>資料更精簡</b>
-            <p>只需姓名、年齡和警示戶/告誡戶狀態。</p>
+            <p>填寫姓名、年齡、手機號碼和警示戶/告誡戶狀態。</p>
           </div>
         </aside>
 
         <section class="form-panel" aria-labelledby="form-title">
           <div class="form-heading">
             <p class="form-kicker">最後一步</p>
-            <h1 id="form-title">填 3 項就能送出</h1>
+            <h1 id="form-title">填寫基本資料</h1>
             <p>完成後加入 LINE，直接與審核專員確認後續流程。</p>
           </div>
 
@@ -59,7 +61,7 @@
                 <label for="age">年齡</label>
                 <input id="age" name="age" type="text" inputmode="numeric" maxlength="3" placeholder="例：35" required>
                 <div class="age-rule" aria-label="申辦年齡說明">
-                  <span class="age-eligible">✓ 18–60歲可辦理</span>
+                  <span class="age-eligible">✓ 18-60歲可辦理</span>
                   <span class="age-ineligible">60歲以上無法辦理</span>
                 </div>
                 <p class="field-error" data-error-for="age"></p>
